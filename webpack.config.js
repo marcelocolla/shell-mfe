@@ -6,7 +6,8 @@ module.exports = {
   mode: "development",
   devtool: "hidden-source-map",
   output: {
-    publicPath: "http://localhost:3000/",
+    // publicPath: "http://localhost:3000/",
+    path: __dirname + "/dist",
     clean: true,
   },
   module: {},
