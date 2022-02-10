@@ -6,11 +6,10 @@ module.exports = {
   mode: "development",
   devtool: "hidden-source-map",
   output: {
-    // publicPath: "http://localhost:3000/",
     path: __dirname + "/dist",
+    uniqueName: "shell-mfe",
     clean: true,
   },
-  module: {},
   plugins: [
     new ModuleFederationPlugin({
       name: "shellMfe",
