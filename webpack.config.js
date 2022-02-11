@@ -17,6 +17,7 @@ module.exports = {
       exposes: {
         "./react": "react",
         "./react-dom": "react-dom",
+        "./react-router": "react-router",
         "./react-router-dom": "react-router-dom",
         "./@material-ui/core": "@material-ui/core",
         "./@material-ui/icons": "@material-ui/icons",
