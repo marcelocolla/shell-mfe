@@ -14,6 +14,10 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "shellMfe",
       filename: "remoteEntry.js",
+      library: {
+        type: "global",
+        name: "shellMfe",
+      },
       exposes: {
         "./react": "react",
         "./react-dom": "react-dom",
@@ -22,6 +26,7 @@ module.exports = {
         "./@material-ui/core": "@material-ui/core",
         "./@material-ui/icons": "@material-ui/icons",
       },
+      shared: ["react", "react-dom", "react-router-dom"],
     }),
   ],
 };
